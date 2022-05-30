@@ -16,6 +16,7 @@ function header(){
                     <li class="link"><a href="">Пополнить</a></li>
                     <li class="link"><a href="">Поддержка</a></li>
                     <li class="link tel"><a href="tel:8 800 333 06 64">8 (800) 333 06 64</a></li>
+                    <li class="link tel--min"><a href="tel:8 800 333 06 64"><img src="/img/telephone.png"></a></li>
                     <li class="link"><div class="personal-area"></div></li>
                     <li class="link exit">Выход</li>
                 </ul>`

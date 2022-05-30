@@ -20,7 +20,7 @@
 }
 .links{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .img{
@@ -31,6 +31,18 @@
     background-color: rgb(27, 201, 181);
     padding:  18px 19px 18px 50px;
     border-radius: 25px;
+}
+.tel--min{
+    display: none;
+}
+.tel--min img{
+    width: 25px;
+
+}
+.tel--min:hover{
+    background-color: rgb(132, 76, 230);
+    border-radius: 30px;
+    
 }
 
 .tel::before {
@@ -68,6 +80,70 @@
 }
 
 
+@media (max-width: 1200px){
+   
+    
+}
+@media (max-width: 992px){
+   .img{
+       width: 140px;
+   }
+   .tel{
+       padding: 10px;
+   }
+   .tel::before{
+    background: none;
+    position: static;
+    top: 0;
+    left: 0;
+   }
+   .link a{
+       font-size: 14px;
+   }
+}
+@media (max-width: 767px){
+    .link:nth-child(2) > a{
+        display: none;
+    }
+    .link:nth-child(3) > a{
+        display: none;
+    }
+}
+@media (max-width: 611px){
+    .tel{
+        display: none;
+    }
+    .link:nth-child(7) > a{
+        border-bottom: none;
+    }
+    .link a:hover{
+        border-radius: 30px;
+        background: none;
+        margin: 0;
+    }
+    .link a img:hover{
+        margin: 6px;
+    }
+    .tel--min{
+        display: block;
+    }
+  }
 
+@media (max-width: 484px){
+    .img{
+        width: 200px;
+    }
+    .link:nth-child(4) > a{
+        display: none;
+    }
+    .link:nth-child(5) > a{
+        display: none;
+    }
+}
+@media (max-width: 360px){
+    .img{
+        width: 140px;
+    }
+}
 
 
