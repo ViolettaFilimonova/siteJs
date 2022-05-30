@@ -28,10 +28,22 @@ function header(){
         `ЛС: ${document.cookie.split('=')[1]}`
 
     )
+    const screenWidth = window.screen.width
+    if(screenWidth === 480){
+        nav.insertAdjacentHTML('afterbegin',
+        `<ul class="links">
+                    <li><a href="https://datiks.ru" ><img class="img" src="/img/datics.jpg" alt=""></a></li>
+                    <li class="link tel--min"><a href="tel:8 800 333 06 64"><img src="/img/telephone.png"></a></li>
+                    <li class="link exit">Выход</li>
+                </ul>`
+    )
+    }
 }
 
 header()
 
+const screenWidth = window.screen.width
+console.log(screenWidth)
 
 
 // let balanceStore = localStorage.getItem('balance')
