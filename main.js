@@ -1,3 +1,4 @@
-import {auth} from './function.js'
+// import {auth} from './function.js'
+//
+// document.querySelector('#check').onclick = auth
 
-document.getElementById('check').onclick = auth

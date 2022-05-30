@@ -1,9 +1,12 @@
-// let login = document.body.querySelector('.login')
-// let name = document.body.querySelector('.neme')
+
+
+//Настройка куки
 let add = document.body.querySelector('.add')
+
 // console.log(add)
 let userLogin = getCookie('login')
-console.log(userLogin)
+
+
 
 function getCookie(name) {
     let matches = document.cookie.match(new RegExp(
@@ -12,7 +15,8 @@ function getCookie(name) {
     return matches ? decodeURIComponent(matches[1]) : undefined;
 }
 
-fetch('https://raw.githubusercontent.com/ViolettaFilimonova/DataBaseForPersonalAccount/main/data.json')
+//соединяемся с бд и передаем дату в функцию  getResult
+fetch('https://raw.githubusercontent.com/ViolettaFilimonova/data-json-wds/main/data.json')
     .then((response) => {
         return response.json();
     })
@@ -20,21 +24,36 @@ fetch('https://raw.githubusercontent.com/ViolettaFilimonova/DataBaseForPersonalA
         getResult(data)
     });
 
+let items
+//Выводим полученный результат о пользователе на страницу
 function getResult(data){
-    for (i = 0; i < data.length; i++){
-
+    for (let i = 0; i < data.length; i++){
         if (data[i].login === userLogin){
-            console.log(data[i])
-            add.innerHTML = `
-            <p>${data[i].login}</p>
-            <p>${data[i].name}</p>
-            <p>${data[i].age}</p>
-            `
-            console.log('done')
-            break
-        }else {
+            let log = data[i].login
+            let name = data[i].name
+            let balance = data[i].balance
+            let ip = data[i].ip
+            let tariff = data[i].tariff
+            let address = data[i].address
+            localStorage.setItem('login', JSON.stringify(log))
+            localStorage.setItem('name', JSON.stringify(name))
+            localStorage.setItem('balance', JSON.stringify(balance))
+            localStorage.setItem('ip', JSON.stringify(ip))
+            localStorage.setItem('tariff', JSON.stringify(tariff))
+            localStorage.setItem('address', JSON.stringify(address))
 
+
+            if (localStorage.getItem('balance')) {
+                items = JSON.parse(localStorage.getItem('balance'))
+                console.log(items)
+            } else {
+                items = []
+            }
+        }else {
             console.log('err')
         }
     }
 }
+
+
+console.log(items, 'data')

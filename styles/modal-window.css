@@ -1,0 +1,32 @@
+*{
+    font-family: TT Norms, sans-serif;
+    background-color: rgba(27, 201, 181, 0);
+}
+.modal-box{
+    /*border: 3px solid rgb(27, 201, 181);*/
+}
+.btn-modal-window{
+    border: none;
+}
+.modal-window{
+
+}
+.modal-window ul{
+    margin: 15px;
+}
+.modal-window ul li{
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: TT Norms, sans-serif;
+    border-bottom: 1px solid rgb(27, 201, 181);
+    padding: 6px;
+}
+.modal-window ul li:hover{
+    background-color: rgb(132, 76, 230);
+    border-radius: 10px 10px 0 0 ;
+    border-style: solid;
+    border-color: rgb(132, 76, 230);
+    color: white;
+    border-bottom: none;
+}

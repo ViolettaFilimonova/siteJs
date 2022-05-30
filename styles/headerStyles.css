@@ -1,0 +1,73 @@
+*{
+    font-family: TT Norms, sans-serif;
+    background-color: rgba(27, 201, 181, 0);
+}
+.header{
+    margin-top: 65px ;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.finance > h1{
+    padding-left: 50px;
+}
+.finance > ul{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img{
+    width: 200px;
+}
+.tel{
+    position: relative;
+    background-color: rgb(27, 201, 181);
+    padding:  18px 19px 18px 50px;
+    border-radius: 25px;
+}
+
+.tel::before {
+    content: " ";
+    position: absolute;
+    top: 6px;
+    left: 11px;
+    background: url(/img/telephone.png);
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px;
+}
+.tel:hover{
+    background-color: rgb(132, 76, 230);
+}
+.link:nth-child(6) > a{
+    border-bottom: none;
+    color: rgb(255, 255, 255);
+}
+.link > a{
+    text-decoration: none;
+    font-size: 16px;
+    font-family: TT Norms, sans-serif;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(27, 201, 181);
+    padding: 6px;
+}
+.link > a:hover{
+    background-color: rgb(132, 76, 230);
+    border-radius: 10px 10px 0 0 ;
+    border-style: solid;
+    border-color: rgb(132, 76, 230);
+    font-size: 16px;
+    color: white;
+}
+
+
+
+
+

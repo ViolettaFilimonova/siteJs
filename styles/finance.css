@@ -1,0 +1,18 @@
+.finance{
+    margin-top: 120px;
+}
+.finance h1{
+    font-size: 52px;
+    font-family: TTNorms, sans-serif;
+    font-weight: bold;
+    line-height: 1.1;
+    opacity: 1;
+    color: #333;
+}
+.finance ul{
+    margin-top: 95px;
+}
+.finance ul li{
+    font-size: 20px;
+    line-height: 1.6;
+}
