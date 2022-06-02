@@ -2,3 +2,4 @@
 //
 // document.querySelector('#check').onclick = auth
 
+//eyrdtuyiguhijopk[ijpuhoygitudrertuiyguipoj[kp[ijuhoygtr]]]
