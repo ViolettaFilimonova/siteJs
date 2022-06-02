@@ -11,10 +11,3 @@ export function connectBD(){
 }
 
 connectBD()
-// fetch('https://raw.githubusercontent.com/ViolettaFilimonova/DataBaseForPersonalAccount/main/data.json')
-//     .then((response) => {
-//         return response.json();
-//     })
-//     .then((data) => {
-//         getResult(data)
-//     });

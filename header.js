@@ -10,7 +10,8 @@ function header(){
     const nav = document.querySelector('.navigation')
     nav.insertAdjacentHTML('afterbegin',
         `<ul class="links">
-                    <li><a href="https://datiks.ru" ><img class="img" src="/img/datics.jpg" alt=""></a></li>
+                    <li><a href="https://datiks.ru" ><img class="logo" src="/img/datics.jpg" alt=""></a></li>
+                    <li class="link burgerMenu"><img src="./img/menu.png"></li>
                     <li class="link"><a class="login" href=""></a></li>
                     <li class="link"><a class="balance" href="">Баланс: ${bal}</a></li>
                     <li class="link"><a href="">Пополнить</a></li>

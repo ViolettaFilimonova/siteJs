@@ -23,7 +23,10 @@
     justify-content: space-around;
     align-items: center;
 }
-.img{
+.burgerMenu{
+    display: none;
+}
+.logo{
     width: 200px;
 }
 .tel{
@@ -85,7 +88,7 @@
     
 }
 @media (max-width: 992px){
-   .img{
+   .logo{
        width: 140px;
    }
    .tel{
@@ -108,6 +111,15 @@
     .link:nth-child(3) > a{
         display: none;
     }
+    .link:nth-child(4) > a{
+        display: none;
+    }
+    .link:nth-child(5) > a{
+        display: none;
+    }
+    .burgerMenu{
+        display: block;
+    }
 }
 @media (max-width: 611px){
     .tel{
@@ -127,10 +139,13 @@
     .tel--min{
         display: block;
     }
+    .burgerMenu{
+        padding-left: 20px;
+    }
   }
 
 @media (max-width: 484px){
-    .img{
+    .logo{
         width: 200px;
     }
     .link:nth-child(4) > a{
@@ -141,7 +156,7 @@
     }
 }
 @media (max-width: 360px){
-    .img{
+    .logo{
         width: 140px;
     }
 }
