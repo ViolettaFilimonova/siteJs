@@ -8,9 +8,6 @@
 .btn-modal-window{
     border: none;
 }
-.modal-window{
-
-}
 .modal-window ul{
     margin: 15px;
 }
@@ -29,4 +26,29 @@
     border-color: rgb(132, 76, 230);
     color: white;
     border-bottom: none;
+}
+
+
+@media (max-width: 644px) {
+    .modal-window{
+        display: none;
+    }
+}
+
+@media (max-width: 410px) {
+    .about{
+        margin-top: 25px;
+    }
+    .about-person{
+        margin: auto;
+    }
+    .about-person p:first-child{
+        font-size: 30px;
+    }
+    .about-person p{
+        font-size: 15px;
+    }
+    .about-person p:nth-child(2){
+        padding-top: 14px;
+    }
 }

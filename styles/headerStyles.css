@@ -25,6 +25,7 @@
 }
 .burgerMenu{
     display: none;
+    position: relative;
 }
 .logo{
     width: 200px;
@@ -37,15 +38,18 @@
 }
 .tel--min{
     display: none;
+    border-bottom: none;
 }
 .tel--min img{
     width: 25px;
-
+}
+.tel--min a{
+    border-radius: 30px;  
 }
 .tel--min:hover{
     background-color: rgb(132, 76, 230);
-    border-radius: 30px;
-    
+    border-radius: 30px; 
+    border-bottom: none;   
 }
 
 .tel::before {
@@ -61,10 +65,11 @@
 .tel:hover{
     background-color: rgb(132, 76, 230);
 }
-.link:nth-child(6) > a{
+/* .link:nth-child(6) > a{
     border-bottom: none;
-    color: rgb(255, 255, 255);
-}
+    color: rgb(0, 0, 0);
+    bor
+} */
 .link > a{
     text-decoration: none;
     font-size: 16px;
@@ -117,6 +122,9 @@
     .link:nth-child(5) > a{
         display: none;
     }
+    .link:nth-child(6) > a{
+        display: none;
+    }
     .burgerMenu{
         display: block;
     }
@@ -132,9 +140,13 @@
         border-radius: 30px;
         background: none;
         margin: 0;
+        border-color: transparent;
     }
     .link a img:hover{
         margin: 6px;
+    }
+    .link > a{
+        border-bottom: none;
     }
     .tel--min{
         display: block;
@@ -152,6 +164,9 @@
         display: none;
     }
     .link:nth-child(5) > a{
+        display: none;
+    }
+    .exit{
         display: none;
     }
 }
